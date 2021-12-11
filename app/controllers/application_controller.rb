@@ -3,6 +3,6 @@ class ApplicationController < ActionController::Base
     
     def currentDate
         @count = Post.count
-        @date = Date.current.strftime("%Y年 %m月 %d日")
+        @date = Date.today.strftime("%Y年 %m月 %d日")
     end
 end
